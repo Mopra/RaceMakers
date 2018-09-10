@@ -6,7 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 
-html,body {
+html,body,header,main,footer {
     overflow-x: hidden;
     font-family: 'Varela Round', sans-serif;
     color:#0c1920;
@@ -29,16 +29,15 @@ iframe { width:100%;min-height:30vh;margin:20px 0; }
 
 .sidenav {
     .user-view {
-        height:200px;
+        height:0px;
         .background {
-            padding:0px 40px;
+            padding:0px 80px;
         }
         img {
             width:100%;
             height:auto;
         }
     }
-
 }
 
 
@@ -101,7 +100,8 @@ header {overflow: hidden;
 
 }
 
-main {overflow: hidden;
+main {
+    overflow: hidden;
     position: relative;
     z-index: 3;
     min-height: 100vh;
@@ -365,7 +365,7 @@ footer {
                 text-align: center;
                 background-color:#ecf0f1;
                 border-radius: 50%;
-                padding-top:13px;
+                padding-top:15px;
                 color:#bdc3c7; 
                 margin: 0 8.75px;
             }
@@ -375,6 +375,7 @@ footer {
 
 
 .animation-wrapper {
+    overflow-x: hidden;
     opacity: .5;
     position: absolute;
     z-index:1;
