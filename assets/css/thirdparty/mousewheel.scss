@@ -1,0 +1,47 @@
+.scroll-msg-container {
+    bottom: 40px;
+    cursor: pointer;
+    height: 38px;
+    left: -20px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 22px;
+}
+
+.scroll-msg-container .scroll-msg-inner {
+    border: 1px solid #000;
+    border-radius: 12px;
+    height: 36px;
+    position: relative;
+    width: 20px;
+}
+
+.scroll-msg-container .scroll-msg-wheel {
+    -o-animation: mouse-scroll 1.2s infinite;
+    -webkit-animation: mouse-scroll 1.2s infinite;
+    animation: mouse-scroll 1.2s infinite;
+    background-color: #000;
+    border-radius: 50%;
+    height: 4px;
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    top: 10%;
+    width: 4px;
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+    top: 10%;
+  }
+
+  80% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      top: 40%;
+  }
+}
